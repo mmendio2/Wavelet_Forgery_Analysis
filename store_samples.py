@@ -6,7 +6,7 @@ import numpy as np
 
 # This process is run individually, as to iterate through each participant
 # would take hours
-participantNumber = "P0_T4"
+participantNumber = "P0_T5"
 # This is where you set the main path of where the images are held
 MAIN_PATH = fr"{os.getcwd()}\Signatures_{participantNumber}"
 list = []
