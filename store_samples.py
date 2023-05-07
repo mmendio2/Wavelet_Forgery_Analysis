@@ -8,7 +8,7 @@ import numpy as np
 # would take hours
 participantNumber = "P0_T5"
 # This is where you set the main path of where the images are held
-MAIN_PATH = fr"{os.getcwd()}\Signatures_{participantNumber}"
+MAIN_PATH = fr"{os.getcwd()}\Signatures\Signatures_{participantNumber}"
 list = []
 
 # Run through all images and calculate their I-matrix
@@ -23,5 +23,5 @@ for i, filename in enumerate(os.listdir(MAIN_PATH)):
     list.append(to_store)
 
 # Write all matrix values as a json
-with open(fr"{MAIN_PATH}\Sig_{participantNumber}.json", "w") as outfile:
+with open(fr"{MAIN_PATH}\Signatures\Sig_{participantNumber}.json", "w") as outfile:
     outfile.write(json.dumps(list))

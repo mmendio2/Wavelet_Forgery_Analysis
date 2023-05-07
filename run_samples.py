@@ -5,7 +5,7 @@ import numpy as np
 from scipy.stats import wilcoxon
 
 # This is where you set the main path of where the images are held
-MAIN_PATH = fr"{os.getcwd()}\Signatures_"
+MAIN_PATH = fr"{os.getcwd()}\Signatures\\Signatures_"
 
 # open known corpus of participant 0
 f_known = open(fr"{MAIN_PATH}P0\Sig_P_0.json", "r")
